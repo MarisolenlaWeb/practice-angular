@@ -28,5 +28,5 @@
 
     angular
       .module('conecta')
-      .component('menu', menu) 
+      .component('menu', menu); 
 })();
