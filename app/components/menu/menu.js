@@ -27,6 +27,6 @@
   };
 
     angular
-      .module('conecta')
+      .module('practica')
       .component('menu', menu); 
 })();

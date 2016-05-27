@@ -2,7 +2,7 @@
 	'use strict'
 
 	angular	
-		.module('conecta')
+		.module('practica')
 		.config(configuration);
 
 		configuration.$inject = ['$routeProvider'];
