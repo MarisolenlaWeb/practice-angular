@@ -9,11 +9,20 @@
 
 		function configuration($routeProvider){
 			$routeProvider.when('/',{
-				templateUrl: 'app/views/home/home.html',
 				controller: 'homeController',
-        		controllerAs: 'home'
-			})
-			.otherwise({
+        		controllerAs: 'home',
+        		templateUrl: 'app/views/home/home.html'
+			}).when('/servicios',{
+				controller: 'serviciosController',
+				controllerAs: 'servicios',
+				templateUrl: 'app/views/servicios/servicios.html'
+
+			}).when('/portafolio',{
+				controller: 'portafolioController',
+				controllerAs: 'portafolio',
+				templateUrl: 'app/views/portafolio/portafolio.html'
+
+			}).otherwise({
 	         	redirectTo: '/'
 	      	});
 		}
